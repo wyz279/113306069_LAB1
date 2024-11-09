@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab1</title>
+</head>
+<body>
+	<div align = "middle"><table border = "1">
+		<tr>
+			<th colspan = "3">
+				About -- 1133306069
+			</th>
+		</tr>
+		<tr>
+			<td rowspan = "3">
+				<image src = "5089.jpg" width = "100" height = "100" /><br>
+				personal photo
+			</td>
+			<form>
+				<td colspan = "2">
+					<lable>Name:
+						<input name = "name" type = "text" value = "吳昀蓁">
+					</lable><br>
+					Gender:
+						<input type = "radio" name = "gender" value = "male">Male
+						<input type = "radio" name = "gender" value = "female" checked>Female
+						<input type = "radio" name = "gender" value = "male">Other
+				</td>
+			</form>
+		</tr>
+		<tr>
+			<td>
+				<form action = "/action_page.php">
+					<lable>Country:</lable>
+					<select name = "country">
+						<option value = "taipei">Taipei</option>
+						<option value = "tainan">Tainan</option>
+						<option value = "taichung">Taichung</option>
+						<option value = "taoyuan">Taoyuan</option>
+						<option value = "earth" selected>Earth</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action = "/action_page.php">
+					<lable for = "birthday">Birthday:</lable>
+					<input type = "date" id = "birthday" name = "birthday" 
+					value = "2006-01-21">
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td colspan = "2">
+				<form>
+					<lable>E-mail:</lable>
+					<input type = "email" name = "email" placeholder = "name@domain.com" value = "113306069@nccu.edu.tw" required>
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<lable>Hobby</lable>
+			</td>
+			<td colspan = "2">
+				<form action = "/action_page.php" method ="get">
+					<input type = "checkbox" name = "hobby" value = "swimming" >Swimming
+					<input type = "checkbox" name = "hobby" value = "volleyball" >Volleyball
+					<input type = "checkbox" name = "hobby" value = "movie" >Movie
+					<input type = "checkbox" name = "hobby" value = "game" >Game
+					<input type = "checkbox" name = "hobby" value = "sleep" checked>Sleep
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<lable>Skill</lable>
+			</td>
+			<td colspan = "2">
+				<form action = "/action_page.php" method ="get">
+					<input type = "checkbox" name = "skill" value = "java" checked>Java
+					<input type = "checkbox" name = "skill" value = "html" >HTML
+					<input type = "checkbox" name = "skill" value = "python" >Python
+					<input type = "checkbox" name = "skill" value = "microsoftOffice" >Microsoft Office
+					<input type = "checkbox" name = "skill" value = "premiere" >Premiere
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Say Something
+			</td>
+			<td colspan = "2">
+				<textarea rows = "1" cols = "52">我一定會搶到票</textarea>
+			</td>
+		</tr>
+		<tr>
+			<td colspan = "3">
+				<form method = "post" action = "">
+					<input type = "submit" value = "提交">
+					<input type = "reset" value = "重設">
+				</form>
+			</td>
+		</tr>
+	</table></div>
+</body>
+</html>
